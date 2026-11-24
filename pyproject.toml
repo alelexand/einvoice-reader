@@ -1,0 +1,12 @@
+[project]
+name = "einvoice-reader"
+version = "1.0.0"
+description = "Reads UBL (Peppol) and CII (Factur-X/ZUGFeRD/XRechnung) e-invoices, checks EN 16931 rules and exports Excel, SQLite and HTML."
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Alexandre Lasse" }]
+dependencies = ["defusedxml>=0.7", "openpyxl>=3.1"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
